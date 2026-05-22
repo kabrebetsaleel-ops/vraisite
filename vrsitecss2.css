@@ -1,0 +1,115 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial, sans-serif;
+    background:#121212;
+    color:white;
+}
+
+/* HEADER */
+
+header{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:2%;
+    background:black;
+    box-sizing:border-box;
+    flex-wrap:wrap;
+}
+
+.logo img{
+    width:8vw;
+    min-width:200px;
+    max-width:300px;
+}
+
+h1{
+    font-size:3vw;
+}
+
+nav{
+    display:flex;
+    gap:2vw;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:1.5vw;
+}
+
+/* SECTION TELECHARGEMENT */
+
+.download{
+    width:90%;
+    margin:auto;
+    text-align:center;
+    padding:5%;
+}
+
+.download h2{
+    font-size:4vw;
+}
+
+.download p{
+    font-size:1.8vw;
+}
+
+/* BOUTONS */
+
+.files{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:25px;
+    margin-top:40px;
+}
+
+.game-file{
+    width:60%;
+    padding:3%;
+    background:red;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+    font-size:2vw;
+    transition:0.3s;
+}
+
+.game-file:hover{
+    background:darkred;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    h1{
+        font-size:7vw;
+    }
+
+    nav a{
+        font-size:4vw;
+    }
+
+    .download h2{
+        font-size:8vw;
+    }
+
+    .download p{
+        font-size:4vw;
+    }
+
+    .game-file{
+        width:90%;
+        font-size:5vw;
+    }
+}
